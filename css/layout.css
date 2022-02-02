@@ -2,3 +2,38 @@
 /* **************************************************************** */
 
 
+.menu_escritorio{
+    display: none;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    padding: 5px 30px;
+    justify-content: space-between;
+    height: 60px;
+}
+
+a{
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px){
+    .header{
+        flex-direction: row-reverse;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .menu_hamb{
+        display: none;
+    }
+
+    .menu_escritorio{
+        display: flex;
+        flex-grow: 0.15;
+        justify-content: space-between;
+    }
+}
+
